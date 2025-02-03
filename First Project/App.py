@@ -129,11 +129,19 @@ from operator import truediv
 # # NOT: one condition should be false
 
 
-name = "Rid"
+# name = "Rid"
 
-if len(name) < 3:
-    print("name must be at least 3 characters")
-elif len(name) > 50:
-    print("name can be a maximum of 50 characters")
-else:
-    print("name looks good!")
+# if len(name) < 3:
+#     print("name must be at least 3 characters")
+# elif len(name) > 50:
+#     print("name can be a maximum of 50 characters")
+# else:
+#     print("name looks good!")
+
+
+# while loop
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+print("Done")
