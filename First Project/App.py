@@ -152,3 +152,21 @@ while i <= 5:
     print('*' * i)
     i = i + 1
 print("Done")
+
+
+# # For Loop
+for item in 'Python':
+    print(item)
+
+for name in ['Mack, Rid, John, Bims']:
+    print(name)
+
+for item in range(10):
+    print(item)
+
+
+prices = [10, 20, 30]
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
