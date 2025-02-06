@@ -128,9 +128,8 @@ from operator import truediv
 # # OR: at least one should be true
 # # NOT: one condition should be false
 
-
 # name = "Rid"
-
+#
 # if len(name) < 3:
 #     print("name must be at least 3 characters")
 # elif len(name) > 50:
@@ -139,68 +138,81 @@ from operator import truediv
 #     print("name looks good!")
 
 
-# while loop
-i = 1
-while i <= 5:
-    print(i)
-    i = i + 1
-print("Done")
-
-# While loop
-i = 1
-while i <= 5:
-    print('*' * i)
-    i = i + 1
-print("Done")
+# # while loop
+# i = 1
+# while i <= 5:
+#     print(i)
+#     i = i + 1
+# print("Done")
+#
+# i = 1
+# while i <= 5:
+#     print('*' * i)
+#     i = i + 1
+# print("Done")
 
 
 # # For Loop
-for item in 'Python':
-    print(item)
-
-for name in ['Mack, Rid, John, Bims']:
-    print(name)
-
-for item in range(10):
-    print(item)
-
-
-prices = [10, 20, 30]
-total = 0
-for price in prices:
-    total += price
-print(f"Total: {total}")
-
-
-# # Nested Loops
-for x in range(4):
-    for y in range(3):
-        print(f"({x}, {y})")
+# for item in 'Python':
+#     print(item)
+#
+# for name in ['Mack, Rid, John, Bims']:
+#     print(name)
+#
+# for item in range(10):
+#     print(item)
+#
+#
+# prices = [10, 20, 30]
+# total = 0
+# for price in prices:
+#     total += price
+# print(f"Total: {total}")
 
 
-numbers = [5, 2, 5, 2, 2]
-for x_count in numbers:
-    print('x' * x_count)
+# # # Nested Loops
+# for x in range(4):
+#     for y in range(3):
+#         print(f"({x}, {y})")
 
-numbers = [5, 2, 5, 2, 2]
-for x_count in numbers:
-    output = ''
-    for count in range(x_count):
-        output += 'x'
-    print(output)
+#
+# numbers = [5, 2, 5, 2, 2]
+# for x_count in numbers:
+#     print('x' * x_count)
+#
+# numbers = [5, 2, 5, 2, 2]
+# for x_count in numbers:
+#     output = ''
+#     for count in range(x_count):
+#         output += 'x'
+#     print(output)
 
 
+# ## List
+# names = ['John', 'Ridwan', 'Dare', 'Seun']
+# names[0] = 'Jon'
+# print(names[1:2])
+# print(names[2])
+# print(names)
+#
+# numbers = [3, 6, 2, 8, 4, 20]
+# max = numbers[0]
+# for number in numbers:
+#     if number > max:
+#         max = number
+# print(max)
 
-## List
-names = ['John', 'Ridwan', 'Dare', 'Seun']
-names[0] = 'Jon'
-print(names[1:2])
-print(names[2])
-print(names)
 
-numbers = [3, 6, 2, 8, 4, 20]
-max = numbers[0]
-for number in numbers:
-    if number > max:
-        max = number
-print(max)
+## Dimensional List (2D)
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# matrix[0][1] = 20
+# print(matrix[0][1])
+
+for row in matrix:
+    for item in row:
+        print(item)
