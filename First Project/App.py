@@ -204,15 +204,28 @@ from operator import truediv
 
 
 ## Dimensional List (2D)
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+# # matrix[0][1] = 20
+# # print(matrix[0][1])
+# for row in matrix:
+#     for item in row:
+#         print(item)
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-# matrix[0][1] = 20
-# print(matrix[0][1])
 
-for row in matrix:
-    for item in row:
-        print(item)
+## List Methods or List Functions
+numbers = [5, 2, 2, 4, 1, 7, 4]
+# numbers.append(20)
+# numbers.insert(0, 10)
+# numbers.remove(7)
+# numbers.pop() #removes last number
+# print(numbers)
+
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
