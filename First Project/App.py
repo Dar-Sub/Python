@@ -234,12 +234,39 @@ from operator import truediv
 # numbers = (1, 2, 3)
 # print(numbers[0])
 
-# Unpacking
-coordinates = (1, 2, 3)
-x = coordinates[0]
-y = coordinates[1]
-z = coordinates[2]
+# # Unpacking
+# coordinates = (1, 2, 3)
+# x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2]
+#
+# # or
+# x, y, z = coordinates
+# print(x)
 
-# or
-x, y, z = coordinates
-print(x)
+
+# # Dictionaries
+# customer = {
+#     "name": "John Smith",
+#     "age": 30,
+#     "is_verified": True
+# }
+# customer["name"] = "Ridwan"
+# print(customer["name"])
+# print(customer["age"])
+# print(customer.get("birthdate", "Jan 1 1980"))
+
+# Exercise
+phone = input("Phone: ")
+digits_mapping = {
+    "1": "One",
+    "2": "Two",
+    "3": "Three",
+    "4": "Four"
+}
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") + " "
+
+print(output)
+
