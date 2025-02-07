@@ -216,16 +216,30 @@ from operator import truediv
 #         print(item)
 
 
-## List Methods or List Functions
-numbers = [5, 2, 2, 4, 1, 7, 4]
-# numbers.append(20)
-# numbers.insert(0, 10)
-# numbers.remove(7)
-# numbers.pop() #removes last number
-# print(numbers)
+# ## List Methods or List Functions
+# numbers = [5, 2, 2, 4, 1, 7, 4]
+# # numbers.append(20)
+# # numbers.insert(0, 10)
+# # numbers.remove(7)
+# # numbers.pop() #removes last number
+# # print(numbers)
+#
+# uniques = []
+# for number in numbers:
+#     if number not in uniques:
+#         uniques.append(number)
+# print(uniques)
 
-uniques = []
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print(uniques)
+# # Tuples (they are immutable)
+# numbers = (1, 2, 3)
+# print(numbers[0])
+
+# Unpacking
+coordinates = (1, 2, 3)
+x = coordinates[0]
+y = coordinates[1]
+z = coordinates[2]
+
+# or
+x, y, z = coordinates
+print(x)
