@@ -255,18 +255,32 @@ from operator import truediv
 # print(customer["name"])
 # print(customer["age"])
 # print(customer.get("birthdate", "Jan 1 1980"))
+#
+# # Exercise
+# phone = input("Phone: ")
+# digits_mapping = {
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four"
+# }
+# output = ""
+# for ch in phone:
+#     output += digits_mapping.get(ch, "!") + " "
+#
+# print(output)
 
-# Exercise
-phone = input("Phone: ")
-digits_mapping = {
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four"
+
+
+# Emoji Converter
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)": "😃",
+    ":(": "😔"
 }
 output = ""
-for ch in phone:
-    output += digits_mapping.get(ch, "!") + " "
-
+for word in words:
+    output += emojis.get(word, word) + " "
 print(output)
 
