@@ -273,11 +273,12 @@ from operator import truediv
 
 
 # Emoji Converter
-message = input(">")
+message = input("> ")
 words = message.split(' ')
 emojis = {
     ":)": "😃",
-    ":(": "😔"
+    ":(": "😔",
+    ":!": "😡"
 }
 output = ""
 for word in words:
