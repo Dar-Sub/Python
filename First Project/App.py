@@ -267,21 +267,38 @@ from operator import truediv
 # output = ""
 # for ch in phone:
 #     output += digits_mapping.get(ch, "!") + " "
-#
 # print(output)
 
 
-
 # Emoji Converter
-message = input("> ")
-words = message.split(' ')
-emojis = {
-    ":)": "😃",
-    ":(": "😔",
-    ":!": "😡"
-}
-output = ""
-for word in words:
-    output += emojis.get(word, word) + " "
-print(output)
+# message = input("> ")
+# words = message.split(' ')
+# emojis = {
+#     ":)": "😃",
+#     ":(": "😔",
+#     ":!": "😡"
+# }
+# output = ""
+# for word in words:
+#     output += emojis.get(word, word) + " "
+# print(output)
 
+
+# # Functions
+# def greet_user():
+#     print("Hi there!")
+#     print("Welcome aboard.")
+#
+# print("Start")
+# greet_user()
+# print("Finish")
+
+
+# Parameter
+def greet_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}!")
+    print("Welcome aboard.")
+
+print("Start")
+greet_user("Ridwan", "Akins")
+print("Finish")
