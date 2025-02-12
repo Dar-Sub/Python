@@ -294,11 +294,40 @@ from operator import truediv
 # print("Finish")
 
 
-# Parameter
-def greet_user(first_name, last_name):
-    print(f"Hi {first_name} {last_name}!")
-    print("Welcome aboard.")
+# # Parameter
+# def greet_user(first_name, last_name):
+#     print(f"Hi {first_name} {last_name}!")
+#     print("Welcome aboard.")
+#
+# print("Start")
+# greet_user("Ridwan", "Akins")
+# print("Finish")
 
-print("Start")
-greet_user("Ridwan", "Akins")
-print("Finish")
+
+# Return Statements
+# def square(number):
+#     return number * number
+#
+# print(square(3))
+
+
+# Exercise
+
+def emoji_converter(message):
+    words = message.split(' ')
+    emojis = {
+        ":)": "😃",
+        ":(": "😔",
+        ":!": "😡"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
+
+
+message = input("> ")
+print(emoji_converter(message))
+
+
+
