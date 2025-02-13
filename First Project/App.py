@@ -330,15 +330,44 @@ from operator import truediv
 
 
 
-# Exceptions
-try:
-    age = int(input('Age: '))
-    income = 20000
-    risk = income / age
-    print(risk)
-except ZeroDivisionError:
-    print('Age cannot be 0.')
-except ValueError:
-    print('Invalid Value')
+# # Exceptions
+# try:
+#     age = int(input('Age: '))
+#     income = 20000
+#     risk = income / age
+#     print(risk)
+# except ZeroDivisionError:
+#     print('Age cannot be 0.')
+# except ValueError:
+#     print('Invalid Value')
+
+
+# Classes
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print(move)
+
+    def draw(self):
+        print(draw)
+
+point = Point(10, 20)
+point.x = 50
+print(point.x)
+
+# point1 = Point()
+# point1.x = 10
+# point1.y = 20
+# print(point1.x)
+#
+# point2 = Point()
+# point2.x = 1
+# print(point2.x)
+
+
+
 
 
