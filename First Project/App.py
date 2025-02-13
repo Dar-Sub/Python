@@ -313,21 +313,32 @@ from operator import truediv
 
 # Exercise
 
-def emoji_converter(message):
-    words = message.split(' ')
-    emojis = {
-        ":)": "😃",
-        ":(": "😔",
-        ":!": "😡"
-    }
-    output = ""
-    for word in words:
-        output += emojis.get(word, word) + " "
-    return output
+# def emoji_converter(message):
+#     words = message.split(' ')
+#     emojis = {
+#         ":)": "😃",
+#         ":(": "😔",
+#         ":!": "😡"
+#     }
+#     output = ""
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output
+#
+# message = input("> ")
+# print(emoji_converter(message))
 
 
-message = input("> ")
-print(emoji_converter(message))
 
+# Exceptions
+try:
+    age = int(input('Age: '))
+    income = 20000
+    risk = income / age
+    print(risk)
+except ZeroDivisionError:
+    print('Age cannot be 0.')
+except ValueError:
+    print('Invalid Value')
 
 
