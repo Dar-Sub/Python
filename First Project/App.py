@@ -369,18 +369,38 @@ from operator import truediv
 
 
 # Exercise
-class Person:
-    def __init__(self, name):
-        self.name = name
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def talk(self):
+#         print(f"Hi, I am {self.name}")
+#
+# john = Person("John Doe")
+# john.talk()
+#
+# bob = Person("Bob Smith")
+# bob.talk()
 
-    def talk(self):
-        print(f"Hi, I am {self.name}")
 
-john = Person("John Doe")
-john.talk()
+# Inheritance
+class Mammal:
+    def walk(self):
+        print("walk")
 
-bob = Person("Bob Smith")
-bob.talk()
+class Dog(Mammal):
+    def bark(self):
+        print("bark")
 
+class Cat(Mammal):
+    def meow(self):
+        print("meow")
 
+cat1 = Cat()
+cat1.walk()
+cat1.meow()
+
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
 
