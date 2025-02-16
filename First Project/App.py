@@ -42,11 +42,11 @@ from operator import truediv
 
 
 # formatted strings
-
 # first = 'John'
 # last = 'Smith'
 # message = f'{first} {last} is a coder'
 # print(message)
+
 
 # String Length
 # name = 'Odusote is a man'
@@ -56,10 +56,12 @@ from operator import truediv
 # print(name.replace('is a man', 'is a Professor'))
 # print(name.replace('Odusote', 'Adekunle'))
 
+
 # Boolean
 # name = 'Oreoluwa is a girl'
 # print('girl' in name)
 # print('boy' in name)
+
 
 # Arithmetic Operations
 # print(10 * 3)
@@ -69,10 +71,12 @@ from operator import truediv
 # multiplication or division
 # addition or subtraction
 
+
 # Math Function
 # x = 2.9
 # print(round(x))
 # print(abs(-2.9)) // Always returns a positive number
+
 
 # If Statements
 # is_hot = False
@@ -88,6 +92,7 @@ from operator import truediv
 #     print("It's a Lovely day")
 #
 # print('Enjoy your day')
+
 
 # Exercise
 # good_credit = True
@@ -138,6 +143,7 @@ from operator import truediv
 #     print("name looks good!")
 
 
+
 # # while loop
 # i = 1
 # while i <= 5:
@@ -150,6 +156,7 @@ from operator import truediv
 #     print('*' * i)
 #     i = i + 1
 # print("Done")
+
 
 
 # # For Loop
@@ -384,23 +391,41 @@ from operator import truediv
 
 
 # Inheritance
-class Mammal:
-    def walk(self):
-        print("walk")
+# class Mammal:
+#     def walk(self):
+#         print("walk")
+#
+# class Dog(Mammal):
+#     def bark(self):
+#         print("bark")
+#
+# class Cat(Mammal):
+#     def meow(self):
+#         print("meow")
+#
+# cat1 = Cat()
+# cat1.walk()
+# cat1.meow()
+#
+# dog1 = Dog()
+# dog1.walk()
+# dog1.bark()
 
-class Dog(Mammal):
-    def bark(self):
-        print("bark")
+#
+# # Modules in Python
+# def lbs_to_kg(weight):
+#     return weight * 0.45
+#
+# def kg_to_lbs(weight):
+#     return weight / 0.45
 
-class Cat(Mammal):
-    def meow(self):
-        print("meow")
 
-cat1 = Cat()
-cat1.walk()
-cat1.meow()
 
-dog1 = Dog()
-dog1.walk()
-dog1.bark()
+# Exercise importing from utils
+from utils import find_max
+
+numbers = [10, 3, 6, 2]
+max = find_max(numbers)
+print(max)
+
 
