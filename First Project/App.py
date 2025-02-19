@@ -428,16 +428,39 @@ from operator import truediv
 # maximum = find_max(numbers)
 # print(maximum(numbers))
 
-# Exercise module from ecommerce/shipping
-import ecommerce.shipping
-# or
-from ecommerce.shipping import calc_shipping
-# or
-from ecommerce import shipping
 
 
-ecommerce.shipping.calc_shipping()
-# or
-calc_shipping()
-# oor
-shipping.calc_shipping()
+# # Exercise module from ecommerce/shipping
+# import ecommerce.shipping
+# # or
+# from ecommerce.shipping import calc_shipping
+# # or
+# from ecommerce import shipping
+#
+#
+# ecommerce.shipping.calc_shipping()
+# # or
+# calc_shipping()
+# # oor
+# shipping.calc_shipping()
+
+
+# Working with RANDOM module
+import random
+for i in range(3):
+    print(random.randint(10, 20))
+
+# Picking Randomly
+members = ['John', 'Mary', 'Bob', 'Josh']
+leader = random.choice(members)
+print(leader)
+
+# Rolling Dice
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1, 6)
+        return first, second
+
+dice = Dice()
+print(dice.roll())
