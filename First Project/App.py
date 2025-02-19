@@ -412,7 +412,7 @@ from operator import truediv
 # dog1.bark()
 
 #
-# # Modules in Python
+# # Modules in Python from converter.py
 # def lbs_to_kg(weight):
 #     return weight * 0.45
 #
@@ -421,11 +421,23 @@ from operator import truediv
 
 
 
-# Exercise importing from utils
-from utils import find_max
+# Exercise importing from utils.py
+# from utils import find_max
+#
+# numbers = [10, 3, 6, 2]
+# maximum = find_max(numbers)
+# print(maximum(numbers))
 
-numbers = [10, 3, 6, 2]
-maximum = find_max(numbers)
-print(maximum(numbers))
+# Exercise module from ecommerce/shipping
+import ecommerce.shipping
+# or
+from ecommerce.shipping import calc_shipping
+# or
+from ecommerce import shipping
 
 
+ecommerce.shipping.calc_shipping()
+# or
+calc_shipping()
+# oor
+shipping.calc_shipping()
