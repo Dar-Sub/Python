@@ -484,4 +484,16 @@ sheet = wb['Sheet1']
 cell = sheet['a1']
 cell = sheet.cell(1, 1)
 
-print(sheet.max_row)
+# for row in range(2, sheet.max_row + 1):
+#     print(row)
+
+# for row in range(2, sheet.max_row + 1):
+#     cell = sheet.cell(row, 3)
+#     print(cell.value)
+
+for row in range(2, sheet.max_row + 1):
+    cell = sheet.cell(row, 3)
+    print(cell.value)
+    
+# print(sheet.max_row)
+# print(cell.value)
